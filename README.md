@@ -22,6 +22,9 @@ Bash scripting is a way to automate tasks on Linux and macOS systems. It involve
   ```
   ~$ ls --help
   ```
+  <br />
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230516105759/151.webp" class="center"/>
+  <br />
 
 File Manipulation:
 

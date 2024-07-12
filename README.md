@@ -144,11 +144,71 @@ Text and Output:
   ```
   ~$ cat log.txt | grep "error"
   ```
+- wc: word count from a file.
+  ```
+  ~$ wc -w hello.txt
+  6 hello.txt
+
+  ~$ wc -w > hello.txt
+  6
+  ```
+  Count word from the input directly
+  ```
+  ~$ wc -w <<< "Hello World"
+  2
+  ```
 <br/>
 <br/>
+
 Basic Scripting Elements:
 
 - #: Used for comments (ignored by the shell).
 - $: Used to access variables. (e.g. name="John" sets a variable named "name")
 <br/>
 <br/>
+
+## Module I
+1. Scripting Bascis
+   - Create a file with `.sh` extension
+     ```
+     ~$ touch basics.sh
+     ```
+   - open the file using `nano` or `vim` editor using command:
+     ```
+     ~$ nano basics.sh
+     ```
+     or
+     ```
+     ~$ vim basics.sh
+     ```
+     - Start writing in nano directly and to close `ctrl+w` + `Enter` and then `ctrl+x` to exit the editor.
+     - For vim users: press `i` to write, then press `esc` to exit write mode, then press `:wq` where `w` is to save the file and `q` is to exit the editor.
+       <br />
+   - start with this line `#!/bin/bash` which tells the type of Shell used by OS to interpret the script, where `/bin/bash` is the path of the bash shell.
+     ```
+     #!/bin/bash
+     ```
+   - Use of `echo` command to a read a text:
+     ```
+     ~$ echo Hello World
+     ```
+   - Execute the script:
+     ```
+     ~$ bash basics.sh
+     Hello World
+     ```
+     or
+     ```
+     ~$ sh basics.sh
+     ```
+     or
+     ```
+     ~$ ./basics.sh
+     ```
+   - If there is some error occur such as `permission denied` then use this command and execute the script again:
+     ```
+     ~$ chmod u+x basics.sh
+     ```
+2. Variables
+   
+   
